@@ -1,0 +1,64 @@
+/*
+This is a selection of simple css animations.
+Use at will.
+
+Don't hesitate to combine these.
+
+!!! The elements should have the from / 0% properties as default.
+!!! Otherwise they might jump at the beginning of the animation
+*/
+
+
+/* blend in */
+
+@keyframes blendIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* move in
+to change direction change the according property name
+
+!!! requires: position: relative ( or absolute / fixed )
+*/
+
+@keyframes moveIn {
+    from {
+        right: 100px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+
+/* scale */
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* flip in
+
+!?! can be used with: transform-origin (bottom center)
+*/
+
+@keyframes flipIn {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
